@@ -15,17 +15,19 @@ function App() {
     reader.onload = async (event) => {
       const img = new Image();
 
-      img.onLoad = () => {
+      img.onload = () => {
         const colorThief = new ColorThief();
         const colorPallete = colorThief.getPalette(img, 6);
         setUploadedImage(event.target.result);
         setColorPalette(colorPallete);
       };
-      console.log(event.target.result);
+
       img.src = event.target.result;
     };
     reader.readAsDataURL(file);
   };
+
+  console.log(typeof colorPalette);
 
   return (
     <>

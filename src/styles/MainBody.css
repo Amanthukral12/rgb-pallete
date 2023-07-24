@@ -40,3 +40,12 @@
 h2 {
     color: white;
 }
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
