@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-
 import Navbar from "./components/Navbar";
 import MainBody from "./components/MainBody";
+
 function App() {
-  const [count, setCount] = useState(0);
+  const [uploadedImage, setUploadedImage] = useState(null);
+  const [colorPalette, setColorPalette] = useState(null);
 
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <MainBody />
+        <MainBody uploadedImage={uploadedImage} colorPalette={colorPalette} />
       </main>
     </>
   );

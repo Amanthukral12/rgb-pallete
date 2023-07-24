@@ -1,0 +1,42 @@
+.mainBody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.github {
+    background-color: white;
+    height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    border: 2px solid rgb(201, 195, 195);
+    height: 25rem;
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: calc(100% + 1rem);
+    height: calc(100% + 0.5rem);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    color: white;
+}
