@@ -1,7 +1,7 @@
+import propTypes from "prop-types";
 import "../styles/Navbar.css";
-BsFillImageFill;
 import { BsFillImageFill } from "react-icons/bs";
-const Navbar = () => {
+const Navbar = ({ uploadImage }) => {
   return (
     <div className="navbar">
       <h1 className="heading">RGB Pallete</h1>
@@ -10,10 +10,14 @@ const Navbar = () => {
           <BsFillImageFill className="icon" />
           Upload Image
         </label>
-        <input type="file" hidden id="file" />
+        <input type="file" hidden id="file" onChange={uploadImage} />
       </span>
     </div>
   );
 };
 
 export default Navbar;
+
+Navbar.propTypes = {
+  uploadImage: propTypes.func,
+};
