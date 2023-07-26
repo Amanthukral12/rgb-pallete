@@ -9,3 +9,18 @@ body {
   background-color: #1E1E1E;
 }
 
+.footer {
+  background-color: #313033;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  color: #AA0606;
+}

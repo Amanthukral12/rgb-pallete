@@ -12,7 +12,14 @@ const MainBody = ({ uploadedImage, colorPalette }) => {
   };
   return (
     <div className="mainBody">
-      <button className="github">⭐ Star on Github</button>
+      <a
+        href="https://github.com/Amanthukral12/rgb-pallete.git"
+        target="_blank"
+        rel="noreferrer"
+        className="github"
+      >
+        ⭐ Star on Github
+      </a>
       <section className="imageContainer">
         {uploadedImage ? (
           <img src={uploadedImage} alt="uploaded Image" />

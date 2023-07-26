@@ -11,11 +11,14 @@
     align-items: center;
     padding: 5px 10px 5px 10px;
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.25rem; 
     margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 10px;
+    text-transform: none;
+    text-decoration: none;
+    color: black;
 }
 
 .imageContainer {

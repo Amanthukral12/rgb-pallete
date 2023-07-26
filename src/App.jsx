@@ -27,8 +27,6 @@ function App() {
     reader.readAsDataURL(file);
   };
 
-  console.log(typeof colorPalette);
-
   return (
     <>
       <header>
@@ -37,6 +35,11 @@ function App() {
       <main>
         <MainBody uploadedImage={uploadedImage} colorPalette={colorPalette} />
       </main>
+      <footer className="footer">
+        <p>
+          Made by Aman Thukral <span className="emoji">❤</span>
+        </p>
+      </footer>
     </>
   );
 }
