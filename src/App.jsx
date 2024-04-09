@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="mainAppDiv">
       <header>
         <Navbar uploadImage={uploadImage} />
       </header>
@@ -40,7 +40,7 @@ function App() {
           Made by Aman Thukral <span className="emoji">❤</span>
         </p>
       </footer>
-    </>
+    </div>
   );
 }
 

@@ -4,23 +4,24 @@ import { BiCopy } from "react-icons/bi";
 import { useState } from "react";
 const ColorPaletteItem = ({ rgb, hex }) => {
   const [copied, setCopied] = useState(false);
-  const copyColor = (e) => {
-    const color = e.target.innerText;
-    navigator.clipboard.writeText(color);
+  const copyColor = () => {
+    navigator.clipboard.writeText(hex);
   };
+
   return (
     <>
-      <div className="colorItem" style={{ background: rgb }}>
-        <div
-          className="hexContainer"
-          onClick={(e) => {
-            copyColor(e);
-            setCopied(true);
-            setTimeout(() => {
-              setCopied(false);
-            }, 1000);
-          }}
-        >
+      <div
+        className="colorItem"
+        style={{ background: rgb }}
+        onClick={() => {
+          copyColor();
+          setCopied(true);
+          setTimeout(() => {
+            setCopied(false);
+          }, 1000);
+        }}
+      >
+        <div className="hexContainer">
           <span>{copied ? "Copied!" : hex}</span>
           <BiCopy className="icon" />
         </div>

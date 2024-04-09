@@ -5,8 +5,19 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1E1E1E;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+.mainAppDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
